@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+google-generativeai
+gTTS
+elevenlabs
+snowflake-connector-python[pandas]
+pandas
+python-multipart
