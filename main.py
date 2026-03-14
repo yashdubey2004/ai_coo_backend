@@ -17,7 +17,6 @@ load_dotenv()
 # Configure API Keys
 GEMINI_KEY = os.getenv("GEMINI_API_KEY")
 ELEVENLABS_KEY = os.getenv("ELEVENLABS_API_KEY")
-
 if GEMINI_KEY:
     genai.configure(api_key=GEMINI_KEY)
 
@@ -25,7 +24,6 @@ if GEMINI_KEY:
 eleven_client = ElevenLabs(api_key=ELEVENLABS_KEY)
 
 app = FastAPI()
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
